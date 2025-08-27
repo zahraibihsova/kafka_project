@@ -3,7 +3,7 @@ import json
 
 consumer = KafkaConsumer(
     "sensor-data",
-    bootstrap_servers=["52.205.188.82:9092"],
+    bootstrap_servers=["52.205.188.82:9092:9092"],
     value_deserializer=lambda v: json.loads(v.decode("utf-8"))
 )
 
