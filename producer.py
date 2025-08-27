@@ -4,7 +4,7 @@ import time
 import random
 
 producer = KafkaProducer(
-    bootstrap_servers=["52.205.188.82:9092:9092"],
+    bootstrap_servers=["52.205.188.82:9092"],
     value_serializer=lambda v: json.dumps(v).encode("utf-8")
 )
 
