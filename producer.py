@@ -16,4 +16,3 @@ while True:
     producer.send("sensor-data", value=data)
     print("Sent:", data)
     time.sleep(2)
-
